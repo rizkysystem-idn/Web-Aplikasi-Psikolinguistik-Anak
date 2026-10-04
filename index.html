@@ -1,0 +1,1121 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="E-Portofolio Psikolinguistik: Perkembangan Bahasa Anak usia 1–3 tahun." />
+  <title>Rizky Syawalizt Elham | E-Portofolio Psikolinguistik UNTAN</title>
+  <style>
+    :root {
+      --paper: #fff1f2;
+      --ink: #302229;
+      --rose: #f43f5e;
+      --coral: #fb923c;
+      --sand: #f6dfd1;
+      --line: #e9cfd2;
+      --muted: #745e64;
+      --white: #fffaf8;
+      --card-bg: rgba(255, 250, 248, 0.85);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; min-width: 320px; overflow-x: hidden; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+    ::selection { background: var(--rose); color: white; }
+    
+    /* Header */
+    .site-header { position: fixed; z-index: 20; top: 0; left: 0; width: 100%; border-bottom: 1px solid rgba(233, 207, 210, .8); background: rgba(255, 241, 242, .9); backdrop-filter: blur(14px); }
+    .header-inner { width: min(1320px, 100%); height: 76px; margin: 0 auto; padding: 0 38px; display: flex; align-items: center; gap: 30px; }
+    .brand { display: inline-flex; align-items: center; gap: 10px; flex: 0 0 auto; font: 600 23px Georgia, serif; letter-spacing: -.04em; }
+    .brand-logo-img { width: 28px; height: 28px; object-fit: contain; display: block; }
+    
+    .desktop-nav { display: flex; align-items: center; justify-content: flex-end; gap: 18px; margin-left: auto; }
+    .desktop-nav a { padding: 28px 0 25px; border-bottom: 2px solid transparent; color: #795e66; font-size: 13px; font-weight: 700; white-space: nowrap; transition: color .2s ease, border-color .2s ease; }
+    .desktop-nav a:hover, .desktop-nav a.active { color: var(--rose); border-color: var(--rose); }
+    
+    .menu-toggle { display: none; margin-left: auto; border: 0; background: transparent; color: var(--ink); cursor: pointer; font-size: 25px; }
+    .mobile-nav { display: none; padding: 12px 20px 22px; border-top: 1px solid var(--line); background: rgba(255,241,242,.98); }
+    .mobile-nav.open { display: grid; gap: 3px; }
+    .mobile-nav a { padding: 10px 0; font: 20px Georgia, serif; color: #6e555b; }
+
+    main { padding-top: 76px; }
+
+    /* Hero */
+    .hero { position: relative; min-height: calc(100vh - 76px); overflow: hidden; display: flex; align-items: center; background: linear-gradient(115deg, #fff1f2 0%, #fff5f3 44%, #dfe9eb 100%); }
+    .hero::before { content: ""; position: absolute; inset: 35% -15% -30% 28%; opacity: .82; background: radial-gradient(ellipse at 50% 70%, rgba(255,255,255,.98) 0 18%, rgba(255,255,255,.7) 34%, transparent 65%), radial-gradient(ellipse at 75% 35%, rgba(255,255,255,.76) 0 15%, transparent 48%), radial-gradient(ellipse at 22% 62%, rgba(255,255,255,.75) 0 13%, transparent 48%); }
+    .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(255,241,242,.72) 0%, rgba(255,241,242,.48) 43%, rgba(255,241,242,.04) 79%); pointer-events: none; }
+    
+    .hero-container { position: relative; z-index: 2; width: min(1320px, 100%); margin: 0 auto; padding: 60px 38px; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center; }
+    .hero-content { display: flex; flex-direction: column; justify-content: center; }
+    .hero-eyebrow { margin: 0 0 22px; color: var(--rose); font: 600 10px/1.5 "Courier New", monospace; letter-spacing: .13em; text-transform: uppercase; }
+    .hero h1 { max-width: 760px; margin: 0 0 24px; font: 500 clamp(38px, 5vw, 76px)/1.02 Georgia, serif; letter-spacing: -.05em; }
+    .hero h1 em { color: var(--rose); font-style: italic; }
+    .hero-copy { max-width: 680px; margin: 0 0 34px; color: #523c43; font-size: 15.5px; line-height: 1.75; text-align: justify; }
+    .hero-copy p { margin: 0 0 14px; }
+    
+    .hero-image-wrapper { display: flex; justify-content: center; align-items: center; position: relative; }
+    .hero-image-card { width: 100%; max-width: 480px; height: 420px; border-radius: 24px; overflow: hidden; border: 4px solid var(--white); box-shadow: 0 20px 40px rgba(48, 34, 41, 0.12); background: var(--sand); }
+    .hero-image-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    .button { display: inline-flex; align-items: center; gap: 12px; padding: 15px 22px; border: 1px solid var(--rose); border-radius: 999px; background: var(--rose); color: white; font-size: 12px; font-weight: 700; transition: transform .25s ease, box-shadow .25s ease, background .25s ease; cursor: pointer; width: fit-content; }
+    .button:hover { background: #bb2945; box-shadow: 5px 5px 0 var(--coral); transform: translate(-2px, -2px); }
+    
+    .institution-logos { position: absolute; z-index: 4; top: 24px; right: 38px; display: flex; align-items: center; gap: 16px; padding: 8px 16px; border: 1px solid rgba(244, 63, 94, 0.15); background: rgba(255, 250, 248, 0.85); box-shadow: 0 2px 12px rgba(48, 34, 41, 0.05); backdrop-filter: blur(10px); border-radius: 8px; }
+    .institution-logo-untan { width: 42px; height: 42px; object-fit: contain; }
+    .institution-logo-separator { width: 1px; height: 32px; background-color: var(--line); opacity: 0.8; }
+    .institution-logo-kemendik { height: 32px; width: auto; object-fit: contain; }
+
+    .hero-note { position: absolute; z-index: 2; right: 40px; bottom: 20px; display: flex; align-items: center; gap: 14px; color: var(--muted); font: 10px "Courier New", monospace; letter-spacing: .12em; text-transform: uppercase; }
+    .hero-line { width: 55px; height: 1px; background: var(--muted); }
+
+    /* Sekapur Sirih */
+    .summary { padding: 115px 38px 120px; background: var(--sand); scroll-margin-top: 76px; }
+    .sekapur-wrapper { width: min(920px, 100%); margin: 0 auto; }
+    .sekapur-wrapper h2 { margin: 0 0 32px; font: 500 clamp(42px, 5.5vw, 68px)/.95 Georgia, serif; letter-spacing: -.05em; }
+    .sekapur-content { color: #523c43; font-size: 16px; line-height: 1.8; text-align: justify; }
+    .sekapur-content p { margin: 0 0 20px; }
+    .sekapur-content ul { margin: 15px 0 25px; padding-left: 20px; list-style-type: disc; }
+    .sekapur-content li { margin-bottom: 12px; }
+    .sekapur-signature { margin-top: 40px; text-align: right; font-style: italic; color: #674c50; }
+
+    /* Profil */
+    .profile-section { padding: 115px 38px; scroll-margin-top: 76px; background: var(--paper); }
+    .profile-container { width: min(1070px, 100%); margin: 0 auto; display: flex; flex-direction: column; gap: 40px; }
+    .profile-banner { display: flex; align-items: center; gap: 30px; padding: 36px; background: var(--white); border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 10px 30px rgba(48,34,41,0.03); }
+    .profile-avatar-wrapper { flex: 0 0 130px; height: 130px; border-radius: 50%; overflow: hidden; border: 3px solid var(--rose); box-shadow: 0 0 0 4px rgba(244,63,94,0.15); }
+    .profile-avatar { width: 100%; height: 100%; object-fit: cover; }
+    .profile-banner-info h2 { margin: 0 0 6px; font: 500 32px Georgia, serif; color: var(--ink); }
+    .profile-banner-info .profile-tagline { margin: 0 0 8px; font-size: 15px; font-weight: 700; color: var(--rose); }
+    .profile-banner-info p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.5; }
+
+    .profile-grid-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+    .academic-card { padding: 22px; background: var(--sand); border: 1px solid var(--line); border-radius: 12px; }
+    .academic-card h3 { margin: 0 0 14px; font: 600 13px "Courier New", monospace; letter-spacing: .1em; text-transform: uppercase; color: var(--rose); }
+    .academic-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    .academic-table tr { border-bottom: 1px dashed rgba(116, 94, 100, 0.2); }
+    .academic-table tr:last-child { border-bottom: none; }
+    .academic-table td { padding: 8px 0; vertical-align: top; }
+    .academic-table td.label { font-weight: 600; color: var(--ink); width: 40%; }
+    .academic-table td.value { color: var(--muted); }
+
+    .profile-bio { padding: 36px; background: var(--white); border: 1px solid var(--line); border-radius: 16px; text-align: justify; line-height: 1.8; color: #523c43; }
+    .profile-bio-quote { margin: 0 0 24px; padding: 20px; border-left: 3px solid var(--rose); background: var(--paper); font: italic 18px Georgia, serif; color: var(--ink); }
+    .profile-bio p { margin: 0 0 16px; font-size: 15px; }
+
+    /* Materi Section */
+    .materi-section { padding: 115px 38px; scroll-margin-top: 76px; background: var(--sand); }
+    .materi-container { width: min(1070px, 100%); margin: 0 auto; }
+    .materi-header h2 { margin: 0 0 12px; font: 500 clamp(36px, 5vw, 64px)/.95 Georgia, serif; letter-spacing: -.05em; }
+    .materi-header p { margin: 0 0 42px; color: var(--muted); font-size: 16px; max-width: 650px; }
+
+    .artefact-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 40px; }
+    .artefact-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 280px; padding: 28px 22px 22px; background: var(--white); border: 1px solid var(--line); border-radius: 10px; cursor: pointer; transition: all .3s ease; text-align: left; }
+    .artefact-card:hover, .artefact-card.active { transform: translateY(-5px); border-color: var(--rose); box-shadow: 0 12px 24px rgba(244,63,94,0.12); }
+    .artefact-card .art-number { font: 600 11px "Courier New", monospace; color: var(--rose); letter-spacing: .12em; margin-bottom: 18px; }
+    .artefact-card .art-title { font: 500 22px/1.2 Georgia, serif; color: var(--ink); margin: 0 0 12px; }
+    .artefact-card .art-desc { font-size: 13px; color: var(--muted); line-height: 1.5; margin: 0; flex-grow: 1; }
+    .artefact-card .art-action { font: 700 10px "Courier New", monospace; color: var(--rose); text-transform: uppercase; letter-spacing: .1em; margin-top: 20px; display: inline-flex; align-items: center; gap: 6px; }
+
+    /* Container Artefak Display */
+    .artefact-display { background: #ffffff; border: 1px solid var(--line); border-radius: 1rem; padding: 36px; box-shadow: 0 10px 25px rgba(0,0,0,0.03); }
+    .slide-content { display: none; }
+    .slide-content.active { display: block; animation: fadeIn .4s ease; }
+    .slide-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 60px 20px; border: 2px dashed var(--line); border-radius: 16px; background: var(--paper); }
+    .slide-placeholder h3 { font: 500 28px Georgia, serif; color: var(--ink); margin: 0 0 10px; }
+    .slide-placeholder p { color: var(--muted); font-size: 14px; max-width: 480px; margin: 0 0 20px; }
+
+    /* Artefak Header Banner */
+    .artefact-header-banner { margin-bottom: 32px; padding-bottom: 24px; border-bottom: 1px solid var(--line); }
+    .artefact-header-banner .badge { display: inline-block; padding: 4px 12px; background: var(--paper); border: 1px solid var(--rose); border-radius: 999px; color: var(--rose); font: 700 10px "Courier New", monospace; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 12px; }
+    .artefact-header-banner h3 { font: 500 28px/1.2 Georgia, serif; color: var(--ink); margin: 0 0 10px; }
+    .artefact-header-banner p { font-size: 15px; color: var(--muted); line-height: 1.7; margin: 0; }
+
+    /* Style Artefak 1 Spesifik */
+    .theory-intro-box { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 24px; margin-bottom: 28px; font-size: 15px; line-height: 1.75; color: #523c43; text-align: justify; }
+    .theory-intro-box p { margin: 0 0 14px; }
+    .theory-intro-box p:last-child { margin-bottom: 0; }
+    
+    .theory-section-title { font: 600 20px Georgia, serif; color: var(--ink); margin: 32px 0 18px; padding-bottom: 8px; border-bottom: 2px solid var(--sand); display: flex; align-items: center; gap: 10px; }
+    .theory-section-title span.number-badge { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--rose); color: white; font-size: 13px; font-family: 'Courier New', monospace; font-weight: 700; }
+    
+    .theory-cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 32px; }
+    .theory-item-card { background: var(--white); border: 1px solid var(--line); border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px; transition: transform .25s ease, box-shadow .25s ease; }
+    .theory-item-card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.04); border-color: var(--rose); }
+    .theory-card-header { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+    .theory-card-title { font: 600 17px Georgia, serif; color: var(--ink); margin: 0; }
+    .theory-card-tag { font: 700 10px "Courier New", monospace; letter-spacing: .08em; text-transform: uppercase; padding: 4px 8px; border-radius: 6px; }
+    .tag-nat { background: #fee2e2; color: #991b1b; }
+    .tag-beh { background: #dbeafe; color: #1e40af; }
+    .tag-int { background: #ffedd5; color: #9a3412; }
+    .tag-stage1 { background: #fef3c7; color: #92400e; }
+    .tag-stage2 { background: #e0e7ff; color: #3730a3; }
+    .tag-stage3 { background: #dcfce7; color: #166534; }
+    .theory-card-body { font-size: 14px; line-height: 1.7; color: #523c43; margin: 0; text-align: justify; }
+
+    /* Style Artefak 2 Spesifik */
+    .video-data-card { display: grid; grid-template-columns: 360px 1fr; gap: 24px; background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 24px; margin-bottom: 28px; transition: box-shadow .3s ease; }
+    .video-data-card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
+    .video-media-box { display: flex; flex-direction: column; gap: 12px; }
+    .video-embed-container { position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; border: 1px solid var(--line); background: #000; }
+    .video-embed-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+    .btn-youtube-link { display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 10px 14px; background: #ff0000; color: #ffffff; font-size: 12px; font-weight: 700; border-radius: 8px; text-decoration: none; transition: background .2s ease; }
+    .btn-youtube-link:hover { background: #cc0000; }
+    
+    .video-analysis-box { display: flex; flex-direction: column; gap: 12px; }
+    .badge-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag-badge { padding: 4px 10px; border-radius: 999px; font-size: 11px; font-weight: 700; letter-spacing: 0.03em; }
+    .tag-red { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
+    .tag-blue { background: #dbeafe; color: #1e40af; border: 1px solid #93c5fd; }
+    .tag-orange { background: #ffedd5; color: #9a3412; border: 1px solid #fdba74; }
+    
+    .video-title { font: 600 18px/1.3 Georgia, serif; color: var(--ink); margin: 0; }
+    .video-analysis-text { font-size: 14px; line-height: 1.7; color: #523c43; margin: 0; text-align: justify; }
+
+    /* Case Card & Grid untuk Artefak 3 */
+    .case-card { margin-bottom: 40px; border: 1px solid var(--line); border-radius: 16px; background: var(--paper); overflow: hidden; }
+    .case-card-header { padding: 18px 24px; background: rgba(244, 63, 94, 0.08); border-bottom: 1px solid var(--line); }
+    .case-card-header h4 { margin: 0; font: 600 18px Georgia, serif; color: var(--ink); }
+    .case-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding: 24px; }
+    .case-block { padding: 20px; background: var(--white); border: 1px solid var(--line); border-radius: 12px; display: flex; flex-direction: column; gap: 16px; }
+    .case-block p, .case-block ul { font-size: 14px; line-height: 1.7; color: #523c43; margin: 0; }
+    .case-block ul { padding-left: 18px; }
+    .case-block li { margin-bottom: 8px; }
+    .section-divider-box { padding: 16px; background: var(--paper); border: 1px solid var(--line); border-radius: 8px; }
+
+    /* Style Artefak 4 Spesifik (Review Artikel) */
+    .article-block { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 28px; margin-bottom: 32px; display: flex; flex-direction: column; gap: 20px; }
+    .article-header-row { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 16px; padding-bottom: 16px; border-bottom: 1px dashed var(--line); }
+    .article-title-area h4 { font: 600 20px/1.3 Georgia, serif; color: var(--ink); margin: 0 0 8px; }
+    .article-meta { font-size: 13.5px; color: var(--muted); line-height: 1.6; }
+    .btn-official-link { display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; background: #ffe4e6; color: var(--rose); font-size: 12px; font-weight: 700; border: 1px solid var(--rose); border-radius: 999px; text-decoration: none; transition: all .2s ease; white-space: nowrap; }
+    .btn-official-link:hover { background: var(--rose); color: white; }
+    
+    .review-sub-title { font: 700 13px "Courier New", monospace; color: var(--rose); letter-spacing: .08em; text-transform: uppercase; margin: 0 0 10px; }
+    .review-text-para { font-size: 14.5px; line-height: 1.75; color: #523c43; text-align: justify; margin: 0; }
+    
+    .findings-list { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .findings-list li { position: relative; padding-left: 24px; font-size: 14px; line-height: 1.65; color: #523c43; }
+    .findings-list li::before { content: "•"; position: absolute; left: 4px; top: -2px; color: var(--rose); font-size: 20px; font-weight: bold; }
+    
+    .pdf-screenshot-container { border: 1px solid var(--line); border-radius: 12px; background: var(--white); padding: 12px; text-align: center; }
+    .pdf-screenshot-container img { width: 100%; max-height: 520px; object-fit: contain; border-radius: 8px; border: 1px solid var(--line); box-shadow: 0 4px 12px rgba(0,0,0,0.04); display: block; }
+    .pdf-screenshot-caption { font-size: 12px; color: var(--muted); margin-top: 8px; font-family: "Courier New", monospace; }
+
+    /* Tabel Sintesis & Perbandingan */
+    .summary-table-wrapper { margin-top: 36px; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: var(--white); }
+    .summary-table-title { padding: 16px 24px; background: var(--sand); border-bottom: 1px solid var(--line); font: 600 14px "Courier New", monospace; color: var(--ink); letter-spacing: .08em; text-transform: uppercase; }
+    .summary-table { width: 100%; border-collapse: collapse; font-size: 13.5px; text-align: left; }
+    .summary-table th { padding: 14px 20px; background: rgba(255, 241, 242, 0.5); font-weight: 700; color: var(--ink); border-bottom: 1px solid var(--line); }
+    .summary-table td { padding: 16px 20px; border-bottom: 1px solid var(--line); vertical-align: top; color: #523c43; line-height: 1.6; }
+    .summary-table tr:last-child td { border-bottom: none; }
+
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* Referensi Section */
+    .reference-section { padding: 115px 38px; scroll-margin-top: 76px; background: var(--paper); }
+    .reference-inner { width: min(1070px, 100%); margin: 0 auto; display: flex; flex-direction: column; gap: 28px; }
+    .reference-inner h2 { margin: 0; font: 500 clamp(42px, 5vw, 64px)/.95 Georgia, serif; }
+    
+    .ref-group { padding: 28px; background: var(--white); border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 4px 16px rgba(48, 34, 41, 0.02); }
+    .ref-group h3 { margin: 0 0 16px; font: 700 14px "Courier New", monospace; color: var(--rose); letter-spacing: .1em; text-transform: uppercase; border-bottom: 1px solid var(--sand); padding-bottom: 10px; }
+    .ref-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+    .ref-list li { font-size: 14px; line-height: 1.7; color: #523c43; text-indent: -32px; padding-left: 32px; word-break: break-word; }
+    .ref-list li a { color: var(--rose); text-decoration: underline; text-underline-offset: 3px; }
+
+    /* Penutup & Refleksi Section */
+    .closing-section { padding: 115px 38px; background: var(--sand); scroll-margin-top: 76px; }
+    .closing-wrapper { width: min(920px, 100%); margin: 0 auto; background: var(--white); border: 1px solid var(--line); border-radius: 20px; padding: 48px; box-shadow: 0 10px 30px rgba(48, 34, 41, 0.04); }
+    .closing-wrapper h2 { margin: 0 0 24px; font: 500 clamp(36px, 5vw, 56px)/1.05 Georgia, serif; color: var(--ink); border-bottom: 2px solid var(--paper); padding-bottom: 16px; }
+    .closing-content { font-size: 15.5px; line-height: 1.8; color: #523c43; text-align: justify; }
+    .closing-content p { margin: 0 0 20px; }
+    .closing-salutation { margin-top: 40px; text-align: left; }
+    .closing-salutation p { margin: 0; line-height: 1.5; }
+    .closing-salutation .salut-header { font-style: italic; color: var(--muted); margin-bottom: 8px; }
+    .closing-salutation .salut-name { font-weight: 700; font-size: 18px; color: var(--ink); font-family: Georgia, serif; }
+    .closing-salutation .salut-title { font-size: 13.5px; color: var(--rose); font-weight: 600; }
+
+    /* Quote */
+    .quote-section { padding: 90px 38px; background: #fff8f6; text-align: center; }
+    .quote-inner { width: min(760px, 100%); margin: 0 auto; }
+    blockquote { margin: 0 0 18px; font: 500 clamp(26px, 3.8vw, 46px)/1.1 Georgia, serif; letter-spacing: -.04em; }
+    cite { color: var(--muted); font-size: 12px; font-style: normal; }
+
+    footer { padding: 22px 38px; display: flex; align-items: center; justify-content: space-between; gap: 20px; color: #765d64; font-size: 12px; background: var(--paper); border-top: 1px solid var(--line); }
+    .footer-links { display: flex; gap: 18px; }
+    
+    .back-top { position: fixed; z-index: 10; right: 24px; bottom: 24px; width: 42px; height: 42px; border: 1px solid var(--rose); border-radius: 50%; background: var(--paper); color: var(--rose); cursor: pointer; opacity: 0; pointer-events: none; transition: all .2s ease; display: grid; place-items: center; font-size: 18px; }
+    .back-top.visible { opacity: 1; pointer-events: auto; }
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 960px) {
+      .header-inner { height: 68px; padding: 0 20px; }
+      .desktop-nav { display: none; }
+      .menu-toggle { display: block; }
+      main { padding-top: 68px; }
+      .hero-container { grid-template-columns: 1fr; padding: 40px 20px; gap: 30px; }
+      .profile-banner { flex-direction: column; text-align: center; }
+      .artefact-grid { grid-template-columns: 1fr; }
+      .video-data-card { grid-template-columns: 1fr; }
+      .case-grid { grid-template-columns: 1fr; }
+      .summary, .profile-section, .materi-section, .reference-section, .closing-section { padding-left: 20px; padding-right: 20px; }
+      .closing-wrapper { padding: 28px; }
+      .artefact-display { padding: 20px; }
+      .summary-table-wrapper { overflow-x: auto; }
+      footer { padding: 20px; flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#beranda" class="brand">
+        <img class="brand-logo-img" src="https://img1.picmix.com/output/stamp/normal/9/7/6/1/2391679_c54c1.gif" alt="Logo Portofolio" />
+        <span>Portofolio</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Navigasi utama">
+        <a href="#beranda" class="active">Beranda</a>
+        <a href="#sekapur-sirih">Sekapur Sirih</a>
+        <a href="#profil-mahasiswa">Profil Mahasiswa</a>
+        <a href="#materi-pembelajaran">Materi Pembelajaran</a>
+        <a href="#referensi">Referensi</a>
+        <a href="#penutup">Penutup</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false">☰</button>
+    </div>
+    <nav class="mobile-nav" aria-label="Navigasi mobile">
+      <a href="#beranda">Beranda</a>
+      <a href="#sekapur-sirih">Sekapur Sirih</a>
+      <a href="#profil-mahasiswa">Profil Mahasiswa</a>
+      <a href="#materi-pembelajaran">Materi Pembelajaran</a>
+      <a href="#referensi">Referensi</a>
+      <a href="#penutup">Penutup</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="beranda">
+      <div class="institution-logos" aria-label="Afiliasi institusi">
+        <img class="institution-logo-untan" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAMo-RoaTtjDuXxkwIW67QARKKQtXhsCZHYx14imGaWRCFVj23crDQP5L588mCAu8GShFksh11m-MZRW05nukYPX2fuBBmqhosszU4xQDHTIpGLFWIlJvPf7DBaYiMix4mQ1M0c_mR-3nB/w200-h200/Logo-Untan-Universitas-Tanjungpura-PNG.png" alt="UNTAN Logo" />
+        <div class="institution-logo-separator"></div>
+        <img class="institution-logo-kemendik" src="https://logo.uajy.ac.id/wp-content/uploads/2025/05/Primary_Horizontal-Logo-1536x453.png" alt="Kemendikbudristek Logo" />
+      </div>
+
+      <div class="hero-container reveal">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Aplikasi Psikolinguistik Anak</p>
+          <h1>Perkembangan Bahasa Anak Usia<br><em>1–3 Tahun</em></h1>
+          
+          <div class="hero-copy">
+            <p>Selamat datang di E-Portofolio Psikolinguistik. Portofolio ini secara khusus mengeksplorasi bagaimana seorang anak manusia pada rentang usia 1–3 tahun mengolah, memahami, dan memproduksi bahasa pertamanya.</p>
+            <p>Melalui sudut pandang psikolinguistik, kita tidak hanya melihat kata-kata yang diucapkan anak sebagai tuturan polos, melainkan sebagai jendela untuk memahami proses mental, kematangan fungsi biologis, dan dinamika kognitif di otak mereka.</p>
+          </div>
+
+          <a href="#materi-pembelajaran" class="button">Jelajahi Materi &rarr;</a>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="hero-image-card">
+            <img src="https://lh3.googleusercontent.com/d/1svO_J86E4NqKO3fOCQUmCblDP16uzDXb" alt="Gambar Ilustrasi Beranda" />
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-note">
+        <div class="hero-line"></div>
+        <span>Modul Digital | Universitas Tanjungpura</span>
+      </div>
+    </section>
+
+    <!-- Sekapur Sirih Section -->
+    <section class="summary reveal" id="sekapur-sirih">
+      <div class="sekapur-wrapper">
+        <h2>Sekapur <em>Sirih</em></h2>
+        <div class="sekapur-content">
+          <p>Puji dan syukur saya panjatkan ke hadirat Tuhan Yang Maha Esa atas rahmat, karunia, dan petunjuk-Nya, sehingga e-portofolio berbasis digital ini dapat diselesaikan dengan baik dan tepat waktu. E-portofolio ini disusun untuk memenuhi tugas Ujian Tengah Semester (UTS) pada mata kuliah Psikolinguistik, Program Studi Pendidikan Bahasa Indonesia, Universitas Tanjungpura.</p>
+          
+          <p>Dalam e-portofolio ini, saya memilih untuk mengangkat dan membedah materi Perkembangan Bahasa Anak, secara khusus berfokus pada rentang usia emas (<em>golden age</em>) 1 hingga 3 tahun (balita). Pilihan topik ini didasari oleh ketertarikan mendalam saya terhadap bagaimana bahasa dan kognisi manusia saling bertaut. Perkembangan bahasa pada anak bukan sekadar proses menghafal kosa kata, melainkan sebuah jendela mental yang memperlihatkan bagaimana otak anak memproses stimulus, merespons lingkungan sosial, dan mengonstruksi pemahamannya tentang dunia di sekitarnya.</p>
+          
+          <p>E-portofolio ini dirancang secara sistematis dengan menyajikan serangkaian artefak pembelajaran, antara lain:</p>
+          <ul>
+            <li><strong>Pemahaman Konseptual:</strong> Landasan teori pemerolehan bahasa anak (Nativisme, Behaviorisme, dan Interaksionisme) serta tahapan tuturan balita.</li>
+            <li><strong>Analisis Data Nyata:</strong> Pembeberan fenomena psikolinguistik dari tiga sampel tuturan anak di media digital (seperti holofrase, <em>telegraphic speech</em>, dan <em>overgeneralization</em>).</li>
+            <li><strong>Studi Kasus Orisinal:</strong> Dua skenario masalah nyata terkait dampak paparan <em>screen time</em> pasif (<em>speech delay</em>) serta dinamika anak di lingkungan bilingual (<em>code-mixing</em>).</li>
+            <li><strong>Review Artikel Ilmiah:</strong> Kajian terhadap tiga artikel ilmiah bereputasi yang menelaah aspek fonologi, hubungan bahasa-kognisi, serta pola penguasaan fonem pada anak.</li>
+          </ul>
+
+          <div class="sekapur-signature">
+            <p>Pontianak, Oktober 2026<br>
+            <strong>Penulis</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profil Mahasiswa Section -->
+    <section class="profile-section reveal" id="profil-mahasiswa">
+      <div class="profile-container">
+        <div class="profile-banner">
+          <div class="profile-avatar-wrapper">
+            <img class="profile-avatar" src="https://lh3.googleusercontent.com/d/11HWbN9Wi-klW5Bk3-KWyV-ifkStc-kpW" alt="Foto Rizky Syawalizt Elham" />
+          </div>
+          <div class="profile-banner-info">
+            <p class="profile-tagline">Halo! Saya Rizky Syawalizt Elham</p>
+            <h2>Mahasiswa Peneliti Muda</h2>
+            <p>Program Studi Pendidikan Bahasa Indonesia — Universitas Tanjungpura</p>
+          </div>
+        </div>
+
+        <div class="profile-grid-cards">
+          <div class="academic-card">
+            <h3>Identitas Diri</h3>
+            <table class="academic-table">
+              <tr><td class="label">Nama Lengkap</td><td class="value">Rizky Syawalizt Elham</td></tr>
+              <tr><td class="label">Nama Panggilan</td><td class="value">El</td></tr>
+              <tr><td class="label">NIM</td><td class="value">F1011241034</td></tr>
+            </table>
+          </div>
+          <div class="academic-card">
+            <h3>Afiliasi &amp; Fokus</h3>
+            <table class="academic-table">
+              <tr><td class="label">Program Studi</td><td class="value">Pendidikan Bahasa Indonesia</td></tr>
+              <tr><td class="label">Fakultas / Kampus</td><td class="value">FKIP / Universitas Tanjungpura</td></tr>
+              <tr><td class="label">Fokus Minat</td><td class="value">Psikolinguistik, Psikologi Perkembangan, &amp; Literasi Bahasa</td></tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="profile-bio">
+          <div class="profile-bio-quote">
+            &ldquo;Bahasa bukan sekadar alat untuk menyampaikan kata, melainkan cermin dari bagaimana struktur mental dan kognisi manusia bereaksi terhadap dunianya.&rdquo;
+          </div>
+          <p>Halo! Orang-orang biasanya memanggil saya dengan panggilan <strong>El</strong>. Saya adalah seorang mahasiswa Program Studi Pendidikan Bahasa Indonesia di Universitas Tanjungpura yang memiliki rasa ingin tahu yang besar terhadap dinamika kejiwaan dan perilaku manusia.</p>
+          <p>Secara khusus, pada tugas e-portofolio ini, saya memilih fokus pada <strong>Perkembangan Bahasa Anak (Usia 1–3 Tahun)</strong>. Saya sangat terpukau mengamati bagaimana seorang balita—dengan segala keterbatasan artikulasi fisiknya—memiliki kapasitas kognitif luar biasa untuk menyerap, mengolah, dan memproduksi bahasa ibu mereka.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Materi Pembelajaran Section -->
+    <section class="materi-section reveal" id="materi-pembelajaran">
+      <div class="materi-container">
+        <div class="materi-header">
+          <h2>Materi <em>Pembelajaran</em></h2>
+          <p>Eksplorasi modul dan artefak pembelajaran psikolinguistik perkembangan bahasa balita. Klik kartu artefak di bawah untuk membuka slide materi.</p>
+        </div>
+
+        <!-- Grid 4 Kartu Artefak -->
+        <div class="artefact-grid">
+          <div class="artefact-card active" onclick="switchArtefact(1)">
+            <div>
+              <div class="art-number">01 / KONSEP &amp; TEORI</div>
+              <h3 class="art-title">Artefak 1: Konsep &amp; Teori</h3>
+              <p class="art-desc">Landasan teori pemerolehan bahasa (Nativisme, Behaviorisme, Interaksionisme) dan tahapan tuturan anak.</p>
+            </div>
+            <div class="art-action">Buka Slide &rarr;</div>
+          </div>
+
+          <div class="artefact-card" onclick="switchArtefact(2)">
+            <div>
+              <div class="art-number">02 / DATA VIDEO</div>
+              <h3 class="art-title">Artefak 2: Data &amp; Fenomena Video</h3>
+              <p class="art-desc">Pembeberan sampel tuturan digital seperti holofrase, telegraphic speech, dan overgeneralization.</p>
+            </div>
+            <div class="art-action">Buka Slide &rarr;</div>
+          </div>
+
+          <div class="artefact-card" onclick="switchArtefact(3)">
+            <div>
+              <div class="art-number">03 / STUDI KASUS</div>
+              <h3 class="art-title">Artefak 3: Studi Kasus Orisinal</h3>
+              <p class="art-desc">Skenario speech delay akibat screen time pasif serta fenomena code-mixing pada anak bilingual.</p>
+            </div>
+            <div class="art-action">Buka Slide &rarr;</div>
+          </div>
+
+          <div class="artefact-card" onclick="switchArtefact(4)">
+            <div>
+              <div class="art-number">04 / REVIEW ARTIKEL</div>
+              <h3 class="art-title">Artefak 4: Review Artikel Ilmiah</h3>
+              <p class="art-desc">Kajian kritis tiga artikel bereputasi mengenai fonologi dan hubungan kognisi-bahasa anak.</p>
+            </div>
+            <div class="art-action">Buka Slide &rarr;</div>
+          </div>
+        </div>
+
+        <!-- Container Display Slide Artefak -->
+        <div class="artefact-display">
+          
+          <!-- Slide Artefak 1: KONSEP & TEORI PERKEMBANGAN BAHASA ANAK -->
+          <div class="slide-content active" id="slide-1">
+            <div class="artefact-header-banner">
+              <span class="badge">Artefak Pembelajaran 1</span>
+              <h3>ARTEFAK PEMBELAJARAN 1: KONSEP &amp; TEORI PERKEMBANGAN BAHASA ANAK</h3>
+              <p><strong>Landasan Teoretis Pemerolehan Bahasa Pertama (Usia 1–3 Tahun)</strong></p>
+            </div>
+
+            <!-- Pengantar Teoretis -->
+            <div class="theory-intro-box">
+              <p>Perkembangan bahasa pada anak usia 1 hingga 3 tahun merupakan salah satu proses kognitif paling pesat dan menakjubkan dalam studi psikolinguistik. Pada rentang usia emas (<em>golden age</em>) ini, anak tidak sekadar belajar menirukan suara di sekitarnya, melainkan secara aktif mengolah sistem simbol bunyi menjadi ujaran yang bermakna. Proses ini berjalan seiring dengan kematangan fungsi kognitif, perkembangan jaringan saraf di otak, serta kontrol motorik organ artikulasi (<em>vocal tract</em>) anak.</p>
+              <p>Secara psikolinguistik, perkembangan bahasa mencakup dua aspek utama yang saling melengkapi: bahasa reseptif (kemampuan memahami tuturan orang lain) dan bahasa ekspresif (kemampuan memproduksi ujaran). Pada anak balita, kemampuan reseptif umumnya berkembang lebih cepat dibandingkan kemampuan ekspresif. Hal ini menjelaskan mengapa seorang anak usia 1,5 tahun sering kali sudah memahami perintah atau pertanyaan yang cukup rumit dari orang tuanya, meskipun mereka baru mampu meresponsnya dengan satu atau dua kata sederhana.</p>
+              <p>Untuk memahami bagaimana anak dapat menguasai bahasa utamanya dalam waktu singkat, para ahli psikolinguistik membaginya ke dalam tiga pilar teori utama serta tiga tahapan tuturan balita:</p>
+            </div>
+
+            <!-- Bagian I: Teori Pemerolehan Bahasa -->
+            <div class="theory-section-title">
+              <span class="number-badge">1</span>
+              <span>Poin-Poin Penting Teori Pemerolehan Bahasa</span>
+            </div>
+
+            <div class="theory-cards-grid">
+              <!-- Card 1: Nativisme -->
+              <div class="theory-item-card">
+                <div class="theory-card-header">
+                  <h4 class="theory-card-title">Teori Nativisme</h4>
+                  <span class="theory-card-tag tag-nat">Noam Chomsky</span>
+                </div>
+                <p class="theory-card-body">
+                  Menyatakan bahwa setiap anak lahir membawa <em>Language Acquisition Device</em> (LAD) atau Alat Pemerolehan Bahasa biologis. LAD berisi cetak biru tata bahasa universal (<em>Universal Grammar</em>) yang memungkinkan anak menyerap kaidah bahasa secara otomatis. Teori ini menjelaskan mengapa anak mampu membentuk kalimat baru yang kreatif dan tidak sekadar menirukan ucapan orang dewasa.
+                </p>
+              </div>
+
+              <!-- Card 2: Behaviorisme -->
+              <div class="theory-item-card">
+                <div class="theory-card-header">
+                  <h4 class="theory-card-title">Teori Behaviorisme</h4>
+                  <span class="theory-card-tag tag-beh">B.F. Skinner</span>
+                </div>
+                <p class="theory-card-body">
+                  Memandang pemerolehan bahasa sebagai proses pembentukan kebiasaan (<em>habit formation</em>) melalui mekanisme stimulus, respons, peniruan (<em>imitation</em>), dan penguatan (<em>reinforcement</em>). Pujian, senyuman, atau respons hangat dari orang tua saat balita mengucapkan suatu kata menjadi dorongan utama bagi anak untuk memperkaya kosa kata harian (leksikon).
+                </p>
+              </div>
+
+              <!-- Card 3: Interaksionisme -->
+              <div class="theory-item-card">
+                <div class="theory-card-header">
+                  <h4 class="theory-card-title">Teori Interaksionisme</h4>
+                  <span class="theory-card-tag tag-int">Vygotsky &amp; Bruner</span>
+                </div>
+                <p class="theory-card-body">
+                  Menekankan bahwa bahasa berkembang dari sintesis antara kapasitas kognitif biologis dan dukungan lingkungan sosial melalui <em>Language Acquisition Support System</em> (LASS). Lingkungan memberikan <em>scaffolding</em> pada area kematangan anak (<em>Zone of Proximal Development</em> / ZPD). Teori ini membuktikan mengapa interaksi dua arah secara langsung jauh lebih efektif dibanding paparan media pasif satu arah seperti <em>screen time</em>.
+                </p>
+              </div>
+            </div>
+
+            <!-- Bagian II: Tahapan Tuturan Balita -->
+            <div class="theory-section-title">
+              <span class="number-badge">2</span>
+              <span>Poin-Poin Penting Tahapan Tuturan Balita (Usia 1–3 Tahun)</span>
+            </div>
+
+            <div class="theory-cards-grid">
+              <!-- Stage 1 -->
+              <div class="theory-item-card">
+                <div class="theory-card-header">
+                  <h4 class="theory-card-title">Tahap Holofrase / One-Word Stage</h4>
+                  <span class="theory-card-tag tag-stage1">Usia 1–1,5 Tahun</span>
+                </div>
+                <p class="theory-card-body">
+                  Anak menggunakan satu kata tunggal untuk mengekspresikan satu ide, keinginan, atau kalimat kompleks (contoh: <em>"Cucu!"</em> bermakna <em>"Saya mau minum susu"</em>). Keterbatasan memori kerja (<em>working memory</em>) dan organ artikulasi menyebabkan anak sering melakukan penyederhanaan fonologi (seperti mengubah bunyi /s/ menjadi /c/).
+                </p>
+              </div>
+
+              <!-- Stage 2 -->
+              <div class="theory-item-card">
+                <div class="theory-card-header">
+                  <h4 class="theory-card-title">Tahap Dua Kata / Two-Word Stage</h4>
+                  <span class="theory-card-tag tag-stage2">Usia 1,5–2 Tahun</span>
+                </div>
+                <p class="theory-card-body">
+                  Anak mulai merangkai dua kata kunci untuk menyampaikan hubungan makna dasar (contoh: <em>"Mobil jatuh"</em>, <em>"Mamak ikut"</em>). Pada fase ini terjadi ledakan kosa kata (<em>vocabulary burst</em>), di mana otak anak secara alami memprioritaskan kata konten (<em>content words</em>) dan mengeliminasi kata tugas demi efisiensi kognitif (<em>cognitive economy</em>).
+                </p>
+              </div>
+
+              <!-- Stage 3 -->
+              <div class="theory-item-card">
+                <div class="theory-card-header">
+                  <h4 class="theory-card-title">Tahap Ujaran Telegrafis / Telegraphic Speech</h4>
+                  <span class="theory-card-tag tag-stage3">Usia 2–3 Tahun</span>
+                </div>
+                <p class="theory-card-body">
+                  Anak merangkai 3 kata atau lebih membentuk kalimat sederhana tanpa kata hubung kompleks. Pada tahap ini sering muncul fenomena <em>overgeneralization</em> (anak menerapkan aturan afiksasi/imbuhan secara konsisten ke semua kata), yang membuktikan bahwa otak anak sedang aktif merumuskan rumus tata bahasa internalnya secara mandiri.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide Artefak 2: DATA VIDEO & FENOMENA TUTURAN DIGITAL -->
+          <div class="slide-content" id="slide-2">
+            <div class="artefact-header-banner">
+              <span class="badge">Artefak Pembelajaran 2</span>
+              <h3>Artefak 2: Analisis Sampel Tuturan Digital</h3>
+              <p><strong>Observasi Fenomena Psikolinguistik pada Anak Usia 1–3 Tahun</strong></p>
+              <p style="margin-top: 8px; font-size: 14px;">Bagian ini memaparkan analisis empiris terhadap tiga sampel data rekaman interaksi dan pembelajaran tutur balita berbasis media digital untuk membedah mekanisme kognitif dan bahasa anak.</p>
+            </div>
+
+            <!-- KARTU DATA 1 -->
+            <div class="video-data-card">
+              <div class="video-media-box">
+                <div class="video-embed-container">
+                  <iframe src="https://www.youtube.com/embed/HFO0IEzZWoU" title="Learning to Talk for Children 1-2 Years Old" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <a href="https://www.youtube.com/watch?v=HFO0IEzZWoU" target="_blank" rel="noopener noreferrer" class="btn-youtube-link">
+                  ▶ Tonton di YouTube
+                </a>
+              </div>
+              <div class="video-analysis-box">
+                <div class="badge-tags">
+                  <span class="tag-badge tag-red">Tahap Holofrase (One-Word Stage)</span>
+                  <span class="tag-badge tag-red">Penyederhanaan Fonologi</span>
+                </div>
+                <h4 class="video-title">DATA 1: Interaksi Anak Usia 1–2 Tahun (Pemerolehan Kata Pertama)</h4>
+                <p class="video-analysis-text">
+                  Pada data ini terlihat anak berada dalam rentang usia 1–2 tahun yang merespons ujaran dewasa dengan satu kata (holofrase). Anak mengutarakan satu kata tunggal untuk menyampaikan pesan maksud (<em>intention</em>) secara utuh. Secara psikolinguistik, proses kognitif anak sudah memahami konteks objek di sekitarnya, namun kapasitas <em>working memory</em> dan kematangan alat artikulasi (<em>vocal tract</em>) yang belum sempurna membatasi anak dalam menyusun struktur tata bahasa utuh. Terjadi pula penyederhanaan fonem (<em>phonological simplification</em>), seperti penghilangan konsonan akhir atau penggantian bunyi rumit ke bunyi konsonan bilabial (/p/, /b/, /m/).
+                </p>
+              </div>
+            </div>
+
+            <!-- KARTU DATA 2 -->
+            <div class="video-data-card">
+              <div class="video-media-box">
+                <div class="video-embed-container">
+                  <iframe src="https://www.youtube.com/embed/r7ISc8__D28" title="Belajar Bicara, Mengenal Warna, Mengenal Kata - Kinderflix" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <a href="https://www.youtube.com/watch?v=r7ISc8__D28" target="_blank" rel="noopener noreferrer" class="btn-youtube-link">
+                  ▶ Tonton di YouTube
+                </a>
+              </div>
+              <div class="video-analysis-box">
+                <div class="badge-tags">
+                  <span class="tag-badge tag-blue">Ujaran Telegrafis (Telegraphic Speech)</span>
+                  <span class="tag-badge tag-blue">Interaksionisme</span>
+                </div>
+                <h4 class="video-title">DATA 2: Stimulasi dan Interaksi Bicara Anak 2–3 Tahun</h4>
+                <p class="video-analysis-text">
+                  Dalam cuplikan tuturan anak usia 2–3 tahun pada interaksi belajar ini, tampak anak mulai menyusun frasa 2–3 kata tanpa kata tugas (seperti kata depan atau kata hubung). Secara kognitif, otak anak memprioritaskan kata konten (<em>content words</em>—nomina/verba) untuk efisiensi komunikasi (<em>cognitive economy</em>). Selain itu, respon anak terhadap stimulasi audiovisual mendukung Teori Interaksionisme (Vygotsky): pemerolehan bahasa anak tidak terjadi dalam ruang hampa, melainkan sangat dipengaruhi oleh <em>Zone of Proximal Development</em> (ZPD) melalui dorongan interaksi sosial dan <em>scaffolding</em> dari lingkungan sekitarnya.
+                </p>
+              </div>
+            </div>
+
+            <!-- KARTU DATA 3 -->
+            <div class="video-data-card">
+              <div class="video-media-box">
+                <div class="video-embed-container">
+                  <iframe src="https://www.youtube.com/embed/G59ykMrt4bI" title="Belajar Bicara untuk Bayi dan Balita - 50 Kata Pertama Bubuyaya" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <a href="https://www.youtube.com/watch?v=G59ykMrt4bI" target="_blank" rel="noopener noreferrer" class="btn-youtube-link">
+                  ▶ Tonton di YouTube
+                </a>
+              </div>
+              <div class="video-analysis-box">
+                <div class="badge-tags">
+                  <span class="tag-badge tag-orange">Overgeneralisasi &amp; Fast Mapping</span>
+                  <span class="tag-badge tag-orange">Teori Nativisme (LAD)</span>
+                </div>
+                <h4 class="video-title">DATA 3: Latihan Fonem dan Pembentukan Kosa Kata Balita</h4>
+                <p class="video-analysis-text">
+                  Video ini memperlihatkan bagaimana balita usia 1–3 tahun memetakan bunyi menjadi makna (<em>fast mapping</em>). Pada rentang ini, sering muncul fenomena <em>overgeneralization</em> (overgeneralisasi kognitif), di mana anak menyebut semua benda bulat sebagai "bola" atau semua hewan berkaki empat sebagai "guguk". Menurut teori Nativisme (Noam Chomsky), fenomena ini membuktikan adanya mekanisme <em>Language Acquisition Device</em> (LAD). Anak tidak hanya sekadar meniru (<em>imitate</em>), tetapi otaknya sedang aktif mengkonstruksi hipotesis dan kaidah tata bahasa sendiri sebelum mencapai pemahaman linguistik yang matang.
+                </p>
+              </div>
+            </div>
+
+            <!-- TABEL MATRIKS SINTESIS DATA VIDEO -->
+            <div class="summary-table-wrapper">
+              <div class="summary-table-title">Matriks Sintesis Observasi Tuturan Digital</div>
+              <table class="summary-table">
+                <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>Judul Data Video</th>
+                    <th>Rentang Usia</th>
+                    <th>Fenomena Utama Psikolinguistik</th>
+                    <th>Teori / Landasan Terbukti</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td><strong>DATA 1:</strong> Learning to Talk for Children 1-2 Years Old</td>
+                    <td>1–2 Tahun</td>
+                    <td>Tahap Holofrase (One-Word) &amp; Penyederhanaan Fonem Bilabial (/p/, /b/, /m/)</td>
+                    <td>Keterbatasan Working Memory &amp; Artikulasi Biologis</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><strong>DATA 2:</strong> Belajar Bicara Kinderflix</td>
+                    <td>2–3 Tahun</td>
+                    <td>Ujaran Telegrafis (Telegraphic Speech) &amp; Efisiensi Kognitif (Content Words)</td>
+                    <td>Teori Interaksionisme Vygotsky (ZPD &amp; Scaffolding)</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td><strong>DATA 3:</strong> 50 Kata Pertama Bubuyaya</td>
+                    <td>1–3 Tahun</td>
+                    <td>Pemetaan Kognitif Cepat (Fast Mapping) &amp; Overgeneralisasi Kognitif</td>
+                    <td>Teori Nativisme Chomsky (Language Acquisition Device / LAD)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Slide Artefak 3: STUDI KASUS ORISINAL DAN ANALISIS PSIKOLINGUISTIK -->
+          <div class="slide-content" id="slide-3">
+            <div class="artefact-header-banner">
+              <span class="badge">Artefak Pembelajaran 3</span>
+              <h3>Studi Kasus Orisinal dan Analisis Psikolinguistik</h3>
+              <p><strong>"Analisis Kritis Fenomena Modern: Dampak Screen Time Pasif terhadap Keterlambatan Bicara dan Dinamika Otak Bilingual pada Balita Usia 1–3 Tahun"</strong></p>
+            </div>
+
+            <!-- STUDI KASUS 1 -->
+            <div class="case-card">
+              <div class="case-card-header">
+                <h4>STUDI KASUS 1: Keterlambatan Bicara (Speech Delay) akibat Paparan Screen Time Pasif pada Anak Usia 2 Tahun</h4>
+              </div>
+              <div class="case-grid">
+                <!-- Kolom Kiri: Skenario Kasus -->
+                <div class="case-block">
+                  <h5 style="font-size: 14px; font-weight: 800; font-family: 'Courier New', monospace; letter-spacing: .08em; color: var(--rose);">A. SKENARIO KASUS</h5>
+                  <p><strong>Arka</strong> adalah seorang anak laki-laki berusia 24 bulan (2 tahun). Kedua orang tua Arka bekerja penuh waktu, sehingga Arka sehari-hari diasuh oleh seorang pengasuh di rumah. Agar Arka tenang, tidak rewel, dan mau makan dengan lancar, Arka terbiasa diberi tontonan tayangan anak-anak di <em>smartphone</em>/TV selama 4–5 jam setiap harinya tanpa interaksi mendampingi.</p>
+                  <p>Saat menginjak usia 2 tahun, Arka belum mampu memproduksi satu kata pun yang bermakna (<em>zero meaningful words</em>). Ia hanya mengeluarkan bunyi meracau tanpa pola (<em>babbling</em>) dan sering mengamuk (<em>tantrum</em>) saat orang dewasa di sekitarnya tidak memahami keinginannya. Namun, hasil pemeriksaan dokter spesialis anak menunjukkan bahwa fungsi pendengaran, struktur pita suara, serta alat artikulasi Arka berada dalam kondisi normal.</p>
+                </div>
+
+                <!-- Kolom Kanan: Pertanyaan & Analisis -->
+                <div class="case-block" style="gap: 20px;">
+                  <!-- Pertanyaan Analisis -->
+                  <div class="section-divider-box">
+                    <h5 style="font-size: 14px; font-weight: 800; font-family: 'Courier New', monospace; letter-spacing: .08em; color: var(--rose); margin-bottom: 10px;">B. PERTANYAAN ANALISIS</h5>
+                    <ul style="margin: 0; padding-left: 18px;">
+                      <li>Mengapa paparan <em>screen time</em> pasif dapat menghambat perkembangan bahasa ekspresif Arka jika ditinjau dari teori pemerolehan bahasa (Behaviorisme, Nativisme, dan Interaksionisme)?</li>
+                      <li>Fenomena psikolinguistik apa yang memicu timbulnya perilaku mengamuk (<em>tantrum</em>) pada Arka, dan bagaimana solusi intervensi psikolinguistik yang tepat?</li>
+                    </ul>
+                  </div>
+
+                  <!-- Analisis & Jawaban -->
+                  <div>
+                    <h5 style="font-size: 14px; font-weight: 800; font-family: 'Courier New', monospace; letter-spacing: .08em; color: var(--rose); margin-bottom: 12px;">C. ANALISIS &amp; JAWABAN PSIKOLINGUISTIK</h5>
+                    <p style="margin-bottom: 8px;"><strong>1. Tinjauan Teoretis Keterlambatan Bicara:</strong></p>
+                    <ul style="margin: 0 0 16px 0; padding-left: 18px;">
+                      <li style="margin-bottom: 10px;">
+                        <strong>Perspektif Interaksionisme (Vygotsky &amp; Bruner):</strong> Pemerolehan bahasa membutuhkan interaksi sosial dua arah yang kaya konteks visual, kontak mata, serta umpan balik langsung (<em>scaffolding</em>). <em>Screen time</em> bersifat satu arah. Otak Arka menerima masukan auditori tanpa ada stimulus balasan (<em>Language Acquisition Support System / LASS</em> lumpuh), sehingga jaringan kognitif-komunikatif tidak terstimulasi.
+                      </li>
+                      <li style="margin-bottom: 10px;">
+                        <strong>Perspektif Nativisme (Chomsky):</strong> Meski memiliki <em>Language Acquisition Device</em> (LAD) bawaan, LAD memerlukan masukan bahasa yang bermakna dan interaktif dari lingkungan agar dapat aktif mengolah aturan tata bahasa internal.
+                      </li>
+                      <li style="margin-bottom: 10px;">
+                        <strong>Perspektif Behaviorisme (Skinner):</strong> Arka tidak mendapatkan <em>positive reinforcement</em> (penguatan positif) atas upaya verbalnya karena media layar tidak merespons atau memberikan pujian/senyuman saat ia mencoba memproduksi bunyi.
+                      </li>
+                    </ul>
+
+                    <p style="margin-bottom: 8px;"><strong>2. Perilaku Tantrum &amp; Solusi:</strong></p>
+                    <ul style="margin: 0; padding-left: 18px;">
+                      <li style="margin-bottom: 10px;">
+                        <strong>Akar Masalah:</strong> Terjadi kesenjangan kognitif-komunikatif (<em>gap between receptive and expressive language</em>). Pemahaman reseptif Arka memproses konsep, namun kemampuan ekspresifnya terhambat. Ketidakmampuan menyampaikan pesan mental memicu frustrasi emosional yang terekspresikan via ledakan motorik (<em>tantrum</em>).
+                      </li>
+                      <li>
+                        <strong>Solusi Intervensi:</strong> <em>Digital Detox</em> (hentikan/batasi ketat paparan gawai pasif) serta penerapan <em>Joint Attention &amp; Responsive Interaction</em> (baca buku bersama, deskripsikan kegiatan verbal, dan respon celotehan dengan tatapan mata &amp; intonasi hangat).
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- STUDI KASUS 2 -->
+            <div class="case-card">
+              <div class="case-card-header">
+                <h4>STUDI KASUS 2: Campur Kode (Code-Mixing) dan Pembentukan Gramatika pada Anak Usia 3 Tahun di Lingkungan Bilingual</h4>
+              </div>
+              <div class="case-grid">
+                <!-- Kolom Kiri: Skenario Kasus -->
+                <div class="case-block">
+                  <h5 style="font-size: 14px; font-weight: 800; font-family: 'Courier New', monospace; letter-spacing: .08em; color: var(--rose);">A. SKENARIO KASUS</h5>
+                  <p><strong>Aira</strong> adalah seorang anak perempuan berusia 38 bulan (3 tahun) yang dibesarkan dalam keluarga bilingual. Ibunya selalu mengajak bicara menggunakan bahasa Indonesia, sedangkan Ayahnya yang sering bertugas di luar negeri berkomunikasi menggunakan bahasa Inggris.</p>
+                  <p>Dalam interaksi sehari-hari, Aira sangat aktif berbicara tetapi sering mencampurkan kosa kata dari kedua bahasa dalam satu kalimat, seperti: <em>"Mama, Aira mau drink jus itu"</em> atau <em>"Look, ada bird terbang di sana!"</em>. Orang tua Aira merasa cemas dan khawatir bahwa pola tutur campuran ini merupakan indikasi bahwa Aira mengalami kebingungan bahasa (<em>language confusion</em>) atau gangguan perkembangan mental berbahasa.</p>
+                </div>
+
+                <!-- Kolom Kanan: Pertanyaan & Analisis -->
+                <div class="case-block" style="gap: 20px;">
+                  <!-- Pertanyaan Analisis -->
+                  <div class="section-divider-box">
+                    <h5 style="font-size: 14px; font-weight: 800; font-family: 'Courier New', monospace; letter-spacing: .08em; color: var(--rose); margin-bottom: 10px;">B. PERTANYAAN ANALISIS</h5>
+                    <ul style="margin: 0; padding-left: 18px;">
+                      <li>Apakah tuturan Aira yang mencampurkan dua bahasa menunjukkan adanya gangguan atau kebingungan bahasa (<em>language confusion</em>) secara psikolinguistik?</li>
+                      <li>Fenomena psikolinguistik apa yang sebenarnya terjadi pada tuturan Aira, dan bagaimana proses kognitif di otaknya mengolah kedua bahasa tersebut?</li>
+                    </ul>
+                  </div>
+
+                  <!-- Analisis & Jawaban -->
+                  <div>
+                    <h5 style="font-size: 14px; font-weight: 800; font-family: 'Courier New', monospace; letter-spacing: .08em; color: var(--rose); margin-bottom: 12px;">C. ANALISIS &amp; JAWABAN PSIKOLINGUISTIK</h5>
+                    <p style="margin-bottom: 8px;"><strong>1. Penilaian Kesehatan Mental-Linguistik:</strong></p>
+                    <p style="margin: 0 0 16px 0;">Tuturan Aira <strong>SAMA SEKALI BUKAN</strong> tanda gangguan psikolinguistik maupun kebingungan bahasa (<em>language confusion</em>). Menurut teori pemerolehan dua bahasa secara simultan (<em>Simultaneous Language Acquisition</em>), otak anak usia 1–3 tahun memiliki tingkat plastisitas saraf (<em>neuroplasticity</em>) yang sangat tinggi untuk mengategorikan dua sistem bahasa secara sejajar tanpa merusak struktur kognitif dasar.</p>
+
+                    <p style="margin-bottom: 8px;"><strong>2. Analisis Proses Kognitif dan Fenomena Code-Mixing:</strong></p>
+                    <ul style="margin: 0; padding-left: 18px;">
+                      <li style="margin-bottom: 10px;">
+                        <strong>Fenomena Code-Mixing (Campur Kode):</strong> Tuturan Aira merupakan bentuk nyata dari <em>code-mixing intra-sentensial</em> (campur kode dalam satu klausa/kalimat).
+                      </li>
+                      <li style="margin-bottom: 10px;">
+                        <strong>Mekanisme Lexical Gap (Kesenjangan Leksikal):</strong> Dalam <em>working memory</em> Aira, leksikon tersimpan dalam satu sistem pemrosesan awal yang fleksibel. Saat Aira mengalami keterbatasan kosa kata (<em>lexical gap</em>) dalam bahasa Indonesia (misal belum lancar kata <em>minum/burung</em>), otaknya secara otomatis dan cepat mengambil leksikon bahasa Inggris (<em>drink/bird</em>) yang dikuasainya untuk memenuhi tujuan komunikasi.
+                      </li>
+                      <li>
+                        <strong>Kepatuhan Struktur Gramatikal:</strong> Meskipun kata yang digunakan bercampur, struktur kalimat dasar Aira tetap mematuhi kaidah tata bahasa yang konsisten (Subjek + Predikat + Objek: <em>"Aira mau [verb] [noun]"</em>), membuktikan mekanisme perumusan tata bahasa internal di dalam otak Aira bekerja sangat teratur dan adaptif.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide Artefak 4: REVIEW ARTIKEL ILMIAH -->
+          <div class="slide-content" id="slide-4">
+            <div class="artefact-header-banner">
+              <span class="badge">Artefak Pembelajaran 4</span>
+              <h3>ARTEFAK PEMBELAJARAN 4: REVIEW ARTIKEL ILMIAH</h3>
+              <p><strong>Kajian Kritis Riset Psikolinguistik Perkembangan Bahasa Anak (Usia 1–3 Tahun)</strong></p>
+              <p style="margin-top: 8px; font-size: 14.5px; text-align: justify; color: #523c43;">
+                Pada bagian Artefak 4 ini, dilakukan tinjauan akademis (<em>literature review</em>) terhadap tiga artikel ilmiah bereputasi yang meneliti fenomena pemerolehan bahasa anak usia balita. Ketiga artikel ini dipilih untuk memberikan landasan empiris yang komprehensif, mulai dari kajian fonologis, korelasi medis-kognitif, hingga studi kasus penguasaan fonem spesifik pada balita. Tinjauan ini membuktikan bahwa proses pemerolehan bahasa pertama anak bukanlah sekadar hapalan kosa kata, melainkan interaksi kompleks yang melibatkan perkembangan biologis, kematangan saraf kognitif, dan latihan alat artikulasi (<em>vocal tract</em>) secara bertahap.
+              </p>
+            </div>
+
+            <!-- BLOK ARTIKEL 1 -->
+            <div class="article-block">
+              <div class="article-header-row">
+                <div class="article-title-area">
+                  <h4>📄 Artikel 1: Kajian Fonologi Pemerolehan Bahasa Pertama (Usia 2–3 Tahun)</h4>
+                  <div class="article-meta">
+                    <strong>Identitas Artikel:</strong> Akbar, R. Z., Janah, F., &amp; Siagian, I. (2022). Analisis Pemerolehan Bahasa Pertama pada Usia 2–3 Tahun: Kajian Fonologi. <em>Jurnal Pendidikan Tambusai</em>, 6(2), 10303–10318.
+                  </div>
+                </div>
+                <a href="https://jptam.org/index.php/jptam/article/view/4054" target="_blank" rel="noopener noreferrer" class="btn-official-link">
+                  🔗 Buka Artikel JPTAM
+                </a>
+              </div>
+
+              <div>
+                <div class="review-sub-title">Paragraf Analisis Review</div>
+                <p class="review-text-para">
+                  Artikel karya Akbar et al. (2022) memberikan kontribusi penting dalam memetakan hierarki pemerolehan sistem bunyi pada anak usia 2–3 tahun di Indonesia. Melalui pendekatan studi kasus kualitatif terhadap tiga anak (NH, MJ, dan D), penelitian ini menegaskan bahwa kematangan biologis dan kesiapan alat artikulasi (<em>vocal tract</em>) memegang peranan kunci dalam menentukan urutan penguasaan fonem. Temuan bahwa bunyi vokal dikuasai secara utuh sebelum anak mampu mengeksekusi konsonan yang lebih rumit memperkuat asumsi teoretis psikolinguistik mengenai keterbatasan neuromuskular balita. Keunggulan riset ini terletak pada ketelitiannya melacak fase <em>cooing</em> sejak usia 6 minggu hingga pembentukan kata, sehingga memberikan gambaran longitudinal yang rinci mengenai bagaimana kemampuan artikulasi anak berkembang secara bertahap.
+                </p>
+              </div>
+
+              <div>
+                <div class="review-sub-title">Poin-Poin Temuan Utama</div>
+                <ul class="findings-list">
+                  <li><strong>Fase <em>Cooing</em> (Dekutan):</strong> Sejak usia 6 minggu, bayi sudah mulai memproduksi bunyi <em>cooing</em> (bunyi vokal/konsonan tak beridentitas jelas) sebagai cikal bakal pengenalan sistem bunyi.</li>
+                  <li><strong>Pengaruh Kematangan Biologis:</strong> Perkembangan fonologi anak berjalan beriringan dengan kesiapan alat artikulasi serta pertumbuhan biologisnya.</li>
+                  <li><strong>Hierarki Fonem:</strong> Terbukti adanya pola konsisten di mana seluruh subjek menguasai seluruh bunyi vokal terlebih dahulu sebelum mampu memproduksi fonem konsonan.</li>
+                </ul>
+              </div>
+
+              <!-- Gambar Artikel 1 -->
+              <div class="pdf-screenshot-container">
+                <img src="https://lh3.googleusercontent.com/d/1Lpfb45UCjwbaof78A2QpFSXGm5q5_zC1" alt="Tangkapan Layar Artikel 1 - Akbar et al. (2022)" />
+                <div class="pdf-screenshot-caption">Gambar 1: Tangkapan Layar Halaman Jurnal / Abstrak Artikel Akbar et al. (2022)</div>
+              </div>
+            </div>
+
+            <!-- BLOK ARTIKEL 2 -->
+            <div class="article-block">
+              <div class="article-header-row">
+                <div class="article-title-area">
+                  <h4>📄 Artikel 2: Pengaruh Perkembangan Bahasa Terhadap Kognitif (Perspektif Medis)</h4>
+                  <div class="article-meta">
+                    <strong>Identitas Artikel:</strong> Hartanto, F., Selina, H., Zuhriah, H., &amp; Fitra, S. (2016). Pengaruh Perkembangan Bahasa Terhadap Perkembangan Kognitif Anak Usia 1–3 Tahun. <em>Sari Pediatri</em>, 12(6), 386–390.
+                  </div>
+                </div>
+                <a href="https://doaj.org/article/854e6bc36f7d46aabd11792e462dcd2b" target="_blank" rel="noopener noreferrer" class="btn-official-link">
+                  🔗 Buka Artikel DOAJ / Sari Pediatri
+                </a>
+              </div>
+
+              <div>
+                <div class="review-sub-title">Paragraf Analisis Review</div>
+                <p class="review-text-para">
+                  Penelitian oleh Hartanto et al. (2016) membuka perspektif interdisipliner yang sangat krusial dengan menghubungkan domain psikolinguistik dan medis-pediatrik. Menggunakan metodologi potong-lintang yang teruji (<em>Denver II</em> dan skala <em>CAPUTE</em>) pada anak usia 1–3 tahun di RS Dr. Kariadi Semarang, artikel ini membuktikan secara empiris bahwa kemampuan berbahasa bukan sekadar keterampilan sosial, melainkan indikator utama dari perkembangan kognitif anak secara keseluruhan. Penurunan skor kognitif (<em>CAT</em>) yang signifikan pada kelompok anak dengan <em>speech delay</em> (82,7 dibandingkan 91,4 pada kelompok normal) menjadi bukti kuat adanya korelasi erat antara keterlambatan berbahasa dan efisiensi pemrosesan kognitif di otak. Riset ini menjadi wawasan berharga bagi praktisi pendidikan dan pengasuh untuk menekankan pentingnya deteksi dini intervensi bahasa guna memanfaatkan masa emas plastisitas otak balita.
+                </p>
+              </div>
+
+              <div>
+                <div class="review-sub-title">Poin-Poin Temuan Utama</div>
+                <ul class="findings-list">
+                  <li><strong>Signifikansi Korelasi (p=0,000):</strong> Hasil uji statistik menunjukkan pengaruh yang sangat signifikan antara perkembangan bahasa terhadap kapasitas kognitif balita.</li>
+                  <li><strong>Kesenjangan Skor Kognitif &amp; Bahasa:</strong> Kelompok normal memiliki rata-rata skor kognitif (CAT) 91,4 dan bahasa (CLAMS) 90,1, sedangkan kelompok <em>speech delay</em> skor kognitifnya merosot ke 82,7 dan skor bahasanya hanya 57,9.</li>
+                  <li><strong>Interdisipliner Medis-Psikolinguistik:</strong> Deteksi dini gangguan bahasa sangat krusial untuk mencegah efek domino terhadap keterlambatan kognitif anak secara luas.</li>
+                </ul>
+              </div>
+
+              <!-- Gambar Artikel 2 -->
+              <div class="pdf-screenshot-container">
+                <img src="https://lh3.googleusercontent.com/d/1IQYHjYCkBnZ-sQrcBbEOmRLedi72f7GP" alt="Tangkapan Layar Artikel 2 - Hartanto et al. (2016)" />
+                <div class="pdf-screenshot-caption">Gambar 2: Tangkapan Layar Halaman Jurnal / Abstrak Artikel Hartanto et al. (2016)</div>
+              </div>
+            </div>
+
+            <!-- BLOK ARTIKEL 3 -->
+            <div class="article-block">
+              <div class="article-header-row">
+                <div class="article-title-area">
+                  <h4>📄 Artikel 3: Studi Kasus Penguasaan Fonem pada Anak Usia 3 Tahun</h4>
+                  <div class="article-meta">
+                    <strong>Identitas Artikel:</strong> Humairah, F. R., Alfi, F. R., Fauziah, A., &amp; Mukhlis, M. (2023). Analisis Pemerolehan Bahasa pada Anak Usia 3 Tahun: Studi Kasus pada Aisyah Hanum Syahidah. <em>SAJAK: Jurnal Penelitian dan Pengabdian Sastra, Bahasa, dan Pendidikan</em>, 2(3).
+                  </div>
+                </div>
+                <a href="https://journal.uir.ac.id/index.php/sajak/article/view/13397" target="_blank" rel="noopener noreferrer" class="btn-official-link">
+                  🔗 Buka Artikel SAJAK UIR
+                </a>
+              </div>
+
+              <div>
+                <div class="review-sub-title">Paragraf Analisis Review</div>
+                <p class="review-text-para">
+                  Studi kasus oleh Humairah et al. (2023) menyajikan analisis mikro yang sangat aplikatif terkait dinamika penguasaan fonem pada anak usia 3 tahun bernama Aisyah Hanum Syahidah. Dengan mengategorikan kemampuan artikulasi subjek ke dalam tiga tingkat kelancaran (lancar, sedang, dan belum lancar), artikel ini berhasil memberikan pemetaan yang konkret mengenai tingkat kesulitan produksi fonem pada balita. Fenomena belum lancarnya pengucapan bunyi getar /r/ pada subjek mengonfirmasi pola umum dalam psikolinguistik, di mana fonem <em>liquid-trill</em> memang membutuhkan kontrol motorik lidah yang paling tinggi. Artikel ini memperkaya pemahaman praktis mengenai batasan normal variasi artikulasi anak sebelum orang tua mengategorikannya sebagai gangguan bicara.
+                </p>
+              </div>
+
+              <div>
+                <div class="review-sub-title">Poin-Poin Temuan Utama</div>
+                <ul class="findings-list">
+                  <li><strong>Kategori Lancar:</strong> Subjek sangat lancar memproduksi vokal dasar serta konsonan bilabial dan artikulasi mudah (/p/, /w/, /m/, /u/, /a/, /e/, /o/, /l/, /k/, /j/, /y/).</li>
+                  <li><strong>Kategori Sedang:</strong> Fonem yang dikuasai secara bertahap meliputi bunyi /s/, /h/, /b/, dan /i/.</li>
+                  <li><strong>Kategori Belum Lancar:</strong> Bunyi getar /r/ menjadi fonem yang paling lambat dikuasai karena kerumitan kontrol motorik organ artikulasi lidah.</li>
+                </ul>
+              </div>
+
+              <!-- Gambar Artikel 3 -->
+              <div class="pdf-screenshot-container">
+                <img src="https://lh3.googleusercontent.com/d/1K86ue-J3T4Nv3J95YcHeL-5luSslwdXN" alt="Tangkapan Layar Artikel 3 - Humairah et al. (2023)" />
+                <div class="pdf-screenshot-caption">Gambar 3: Tangkapan Layar Halaman Jurnal / Abstrak Artikel Humairah et al. (2023)</div>
+              </div>
+            </div>
+
+            <!-- TABEL PERBANDINGAN TINJAUAN ARTIKEL ILMIAH -->
+            <div class="summary-table-wrapper">
+              <div class="summary-table-title">📊 Tabel Perbandingan Tinjauan Artikel Ilmiah</div>
+              <table class="summary-table">
+                <thead>
+                  <tr>
+                    <th>Aspek Komparasi</th>
+                    <th>Artikel 1 (Akbar et al., 2022)</th>
+                    <th>Artikel 2 (Hartanto et al., 2016)</th>
+                    <th>Artikel 3 (Humairah et al., 2023)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Fokus Utama</strong></td>
+                    <td>Pemerolehan Fonologi (Vokal &amp; Konsonan)</td>
+                    <td>Hubungan Perkembangan Bahasa &amp; Kognitif</td>
+                    <td>Mapping Kategori Kelancaran Fonem Balita</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Metode &amp; Subjek</strong></td>
+                    <td>Kualitatif Studi Kasus (3 Anak, Usia 2–3 Thn)</td>
+                    <td>Kuantitatif Cross-sectional (Pediatrik RS)</td>
+                    <td>Kualitatif Deskriptif (1 Anak, Usia 3 Thn)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Domain Ilmu</strong></td>
+                    <td>Linguistik / Psikolinguistik murni</td>
+                    <td>Medis Pediatrik &amp; Psikologi Kognitif</td>
+                    <td>Terapan Sastra &amp; Pendidikan Bahasa</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Temuan Kunci</strong></td>
+                    <td>Vokal dikuasai utuh sebelum konsonan</td>
+                    <td><em>Speech delay</em> menurunkan skor kognitif (CAT)</td>
+                    <td>Fonem /r/ paling lambat dikuasai (<em>liquid-trill</em>)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Referensi Section -->
+    <section class="reference-section reveal" id="referensi">
+      <div class="reference-inner">
+        <h2>Referensi <em>Pustaka</em></h2>
+        
+        <!-- Kelompok A -->
+        <div class="ref-group">
+          <h3>A. Artikel Jurnal Ilmiah</h3>
+          <ul class="ref-list">
+            <li>Akbar, R. Z., Janah, F., &amp; Siagian, I. (2022). Analisis pemerolehan bahasa pertama pada usia 2–3 tahun: Kajian fonologi. <em>Jurnal Pendidikan Tambusai</em>, 6(2), 10303–10318. <a href="https://jptam.org/index.php/jptam/article/view/4054" target="_blank" rel="noopener noreferrer">https://jptam.org/index.php/jptam/article/view/4054</a></li>
+            <li>Hartanto, F., Selina, H., Zuhriah, H., &amp; Fitra, S. (2016). Pengaruh perkembangan bahasa terhadap perkembangan kognitif anak usia 1–3 tahun. <em>Sari Pediatri</em>, 12(6), 386–390. <a href="https://doaj.org/article/854e6bc36f7d46aabd11792e462dcd2b" target="_blank" rel="noopener noreferrer">https://doaj.org/article/854e6bc36f7d46aabd11792e462dcd2b</a></li>
+            <li>Humairah, F. R., Alfi, F. R., Fauziah, A., &amp; Mukhlis, M. (2023). Analisis pemerolehan bahasa pada anak usia 3 tahun: Studi kasus pada Aisyah Hanum Syahidah. <em>SAJAK: Jurnal Penelitian dan Pengabdian Sastra, Bahasa, dan Pendidikan</em>, 2(3). <a href="https://journal.uir.ac.id/index.php/sajak/article/view/13397" target="_blank" rel="noopener noreferrer">https://journal.uir.ac.id/index.php/sajak/article/view/13397</a></li>
+          </ul>
+        </div>
+
+        <!-- Kelompok B -->
+        <div class="ref-group">
+          <h3>B. Sumber Media Digital &amp; Video Observasi</h3>
+          <ul class="ref-list">
+            <li>Bubuyaya Official. (2023, 7 Oktober). <em>Belajar bicara untuk bayi dan balita | 50 kata pertama | Bahasa Indonesia edukasi anak | Mudah</em> [Video]. YouTube. <a href="https://www.youtube.com/watch?v=G59ykMrt4bI" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=G59ykMrt4bI</a></li>
+            <li>English for Kids. (2020). <em>Learning to talk for children 1-2 years old</em> [Video]. YouTube. <a href="https://www.youtube.com/watch?v=HFO0IEzZWoU" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=HFO0IEzZWoU</a></li>
+            <li>Kinderflix. (2023). <em>Belajar bicara, mengenal warna, mengenal kata</em> [Video]. YouTube. <a href="https://www.youtube.com/watch?v=r7ISc8__D28" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=r7ISc8__D28</a></li>
+          </ul>
+        </div>
+
+        <!-- Kelompok C -->
+        <div class="ref-group">
+          <h3>C. Buku &amp; Landasan Teori Utama</h3>
+          <ul class="ref-list">
+            <li>Bruner, J. S. (1983). <em>Child's talk: Learning to use language</em>. W. W. Norton &amp; Company. (Referensi Teori Interaksionisme &amp; LASS)</li>
+            <li>Chomsky, N. (1965). <em>Aspects of the theory of syntax</em>. MIT Press. (Referensi Teori Nativisme, LAD, &amp; Universal Grammar)</li>
+            <li>Dardjowidjojo, S. (2000). <em>Echa: Kisah pemerolehan bahasa anak Indonesia</em>. Grasindo. (Referensi Pola Pemerolehan Bahasa Anak Indonesia)</li>
+            <li>Skinner, B. F. (1957). <em>Verbal behavior</em>. Appleton-Century-Crofts. (Referensi Teori Behaviorisme &amp; Reinforcement)</li>
+            <li>Vygotsky, L. S. (1978). <em>Mind in society: The development of higher psychological processes</em>. Harvard University Press. (Referensi Teori ZPD &amp; Scaffolding)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Penutup & Refleksi Section -->
+    <section class="closing-section reveal" id="penutup">
+      <div class="closing-wrapper">
+        <h2>Penutup &amp; Refleksi Diri</h2>
+        <div class="closing-content">
+          <p>Penyusunan e-portofolio ini memberikan pengalaman belajar yang sangat berharga bagi saya sebagai mahasiswa Pendidikan Bahasa Indonesia di Universitas Tanjungpura. Memahami psikolinguistik perkembangan bahasa balita tidak hanya memperkaya wawasan teoretis akademis, tetapi juga menanamkan kesadaran kritis mengenai betapa krusialnya peran pendidik, orang tua, dan lingkungan dalam mengawal masa emas (<em>golden age</em>) berbahasa seorang anak.</p>
+          <p>Saya menyadari bahwa penyusunan e-portofolio ini masih memiliki keterbatasan. Oleh karena itu, kritik dan saran yang membangun dari dosen pengampu serta para pembaca sangat saya harapkan demi penyempurnaan karya-karya akademis saya di masa mendatang. Semoga e-portofolio ini dapat memberikan manfaat, inspirasi, serta referensi yang berguna bagi pengembangan ilmu bahasa dan pengasuhan anak.</p>
+          
+          <div class="closing-salutation">
+            <p class="salut-header">Salam hangat,</p>
+            <p class="salut-name">Rizky Syawalizt Elham</p>
+            <p class="salut-title">Mahasiswa Pendidikan Bahasa Indonesia — Universitas Tanjungpura</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kutipan / Quote -->
+    <section class="quote-section reveal">
+      <div class="quote-inner">
+        <blockquote>&ldquo;Bahasa adalah cermin dari pikiran manusia yang paling awal.&rdquo;</blockquote>
+        <cite>— Catatan Studi Psikolinguistik</cite>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <span>&copy; Universitas Tanjungpura — E-Portofolio Psikolinguistik Rizky Syawalizt Elham.</span>
+    <div class="footer-links">
+      <a href="#beranda">Beranda</a>
+      <a href="#profil-mahasiswa">Profil Mahasiswa</a>
+      <a href="#referensi">Referensi</a>
+      <a href="#penutup">Penutup</a>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTopBtn" aria-label="Kembali ke atas">&uarr;</button>
+
+  <script>
+    function switchArtefact(index) {
+      const cards = document.querySelectorAll('.artefact-card');
+      const slides = document.querySelectorAll('.slide-content');
+
+      cards.forEach((card, idx) => {
+        if (idx === index - 1) {
+          card.classList.add('active');
+        } else {
+          card.classList.remove('active');
+        }
+      });
+
+      slides.forEach((slide, idx) => {
+        if (idx === index - 1) {
+          slide.classList.add('active');
+        } else {
+          slide.classList.remove('active');
+        }
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const mobileNav = document.querySelector(".mobile-nav");
+
+      if (menuToggle && mobileNav) {
+        menuToggle.addEventListener("click", function () {
+          const isOpen = mobileNav.classList.toggle("open");
+          menuToggle.setAttribute("aria-expanded", isOpen);
+          menuToggle.textContent = isOpen ? "✕" : "☰";
+        });
+
+        mobileNav.querySelectorAll("a").forEach(link => {
+          link.addEventListener("click", () => {
+            mobileNav.classList.remove("open");
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.textContent = "☰";
+          });
+        });
+      }
+
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll(".desktop-nav a");
+
+      function highlightNavOnScroll() {
+        const scrollY = window.pageYOffset;
+        sections.forEach(current => {
+          const sectionHeight = current.offsetHeight;
+          const sectionTop = current.offsetTop - 100;
+          const sectionId = current.getAttribute("id");
+
+          if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            navLinks.forEach(link => {
+              link.classList.remove("active");
+              if (link.getAttribute("href") === "#" + sectionId) {
+                link.classList.add("active");
+              }
+            });
+          }
+        });
+      }
+      window.addEventListener("scroll", highlightNavOnScroll);
+
+      const revealElements = document.querySelectorAll(".reveal");
+      if ("IntersectionObserver" in window) {
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+      } else {
+        revealElements.forEach(el => el.classList.add("visible"));
+      }
+
+      const backTopBtn = document.getElementById("backTopBtn");
+      if (backTopBtn) {
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 400) {
+            backTopBtn.classList.add("visible");
+          } else {
+            backTopBtn.classList.remove("visible");
+          }
+        });
+
+        backTopBtn.addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>
